@@ -1,10 +1,10 @@
-module github.com/pin/golang-tftp-example
+module gotftpd
 
-go 1.19
+go 1.16
 
-require github.com/pin/tftp/v3 v3.0.0
+replace github.com/pin/tftp/v3 => ./src/tftp-3.0.0
 
 require (
-	golang.org/x/net v0.0.0-20200202094626-16171245cfb2 // indirect
-	golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a // indirect
+	github.com/pin/tftp/v3 v3.0.0
+	golang.org/x/net v0.34.0 // indirect
 )
